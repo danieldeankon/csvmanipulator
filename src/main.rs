@@ -29,8 +29,8 @@ fn run() -> Result<(), Box<dyn Error>> {
             if &record[i] == "" {
                 continue
             }
-            //                       elev, rain, temp
-            println!("VoronoiInfo::new({}, {}, {}),", &record[i], &record[0], &head2[i]);
+            //                                     rain, temp
+            println!("VoronoiInfo::new(Material::{}, {}, {}),", &record[i], &record[0], &head2[i]);
             num_entries += 1;
         }
     }
